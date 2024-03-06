@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+}
+body {
+  background-color: var(--Light-gray);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+}
+section.card {
+  width: 320px;
+  height: 497px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 5px 40px -1px var(--Grayish-blue);
+}
+section.card > article {
+  width: 288px;
+  height: 129px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  align-items: center;
+}
+article h1 {
+  width: 288px;
+  /* height: 56px; */
+  color: var(--Dark-blue);
+  font-weight: 700;
+  font-size: calc(15px * 1.5);
+}
+article p {
+  width: 256px;
+  color: var(--Grayish-blue);
+  font-weight: 400;
+  font-size: 15px;
+}
+img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+@media (max-width: 767px) {
+    section.card {
+        box-shadow: 0px 5px 30px -1px var(--Grayish-blue);
+    }
+}
